@@ -1,0 +1,6 @@
+framework module Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011 {
+  umbrella header "Pods-Saparamadu D.D.G.A.Y.M._Cobsccomp171p-011-umbrella.h"
+
+  export *
+  module * { export * }
+}
