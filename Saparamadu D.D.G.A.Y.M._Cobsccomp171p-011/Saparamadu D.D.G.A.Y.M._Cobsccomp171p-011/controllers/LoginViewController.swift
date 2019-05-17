@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 import GoogleSignIn
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController , GIDSignInDelegate, GIDSignInUIDelegate{
 
     @IBOutlet weak var userLogin: UILabel!
     @IBOutlet weak var userName: UITextField!
@@ -20,7 +20,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var login: UIButton!
     @IBOutlet weak var forgetPassword: UIButton!
     override func viewDidLoad() {
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().delegate = self
+        
         super.viewDidLoad()
+        signup.layer.cornerRadius = self.signup.bounds.height / 2
+         login.layer.cornerRadius = self.login.bounds.height / 2
 
         // Do any additional setup after loading the view.
     }
@@ -42,6 +47,40 @@ class LoginViewController: UIViewController {
         
         }
     }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+        // ...
+        if let error = error {
+            print(error)
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+            if let error = error {
+                print(error)
+                let alert = UIAlertController(title: "Google Signin Error", message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return
+            }
+            // User is signed in
+            self.dismiss(animated: true, completion: nil)
+            print(authResult!.user.email)
+            // ...
+        }
+        // ...
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+    }
+    
+    
     
 
     @IBAction func signup(_ sender: Any) {
