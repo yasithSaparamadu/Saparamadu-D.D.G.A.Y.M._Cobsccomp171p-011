@@ -27,6 +27,10 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(ApptempData.userDataHaddle!)
+    }
+  
 }
 

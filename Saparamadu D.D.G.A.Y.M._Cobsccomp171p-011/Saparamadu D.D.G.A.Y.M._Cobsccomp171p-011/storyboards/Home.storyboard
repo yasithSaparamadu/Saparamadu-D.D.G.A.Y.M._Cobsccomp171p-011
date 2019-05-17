@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0re-3a-FFN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jL8-P7-kVT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLX-qb-MPs">
-                                        <rect key="frame" x="156" y="45" width="62.5" height="29"/>
+                                        <rect key="frame" x="156" y="63" width="62.5" height="29"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="29" id="6hy-e1-M06"/>
-                                            <constraint firstAttribute="width" constant="62.5" id="vNg-ZM-ysd"/>
+                                            <constraint firstAttribute="height" constant="29" id="3tS-9K-lE3"/>
+                                            <constraint firstAttribute="width" constant="62.5" id="TSF-Tr-xH3"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,9 +34,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.89665641190000001" green="0.68302656747966184" blue="0.45778830761457578" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="LLX-qb-MPs" firstAttribute="leading" secondItem="VRq-ti-dRs" secondAttribute="leading" constant="156" id="BGK-6V-5bj"/>
-                                    <constraint firstAttribute="trailing" secondItem="LLX-qb-MPs" secondAttribute="trailing" constant="156.5" id="cck-FC-W1s"/>
-                                    <constraint firstItem="LLX-qb-MPs" firstAttribute="top" secondItem="VRq-ti-dRs" secondAttribute="top" constant="45" id="iM6-mF-wGj"/>
+                                    <constraint firstItem="LLX-qb-MPs" firstAttribute="leading" secondItem="VRq-ti-dRs" secondAttribute="leading" constant="156" id="J8u-b6-hZD"/>
+                                    <constraint firstItem="LLX-qb-MPs" firstAttribute="top" secondItem="VRq-ti-dRs" secondAttribute="top" constant="63" id="kqT-bX-LyQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="LLX-qb-MPs" secondAttribute="trailing" constant="156.5" id="rNW-fc-Clv"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -49,8 +49,33 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oj2-NU-WfJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sGE-pR-JHF">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="L2C-nh-3QZ">
+                            <connections>
+                                <action selector="logout:" destination="0re-3a-FFN" id="MgQ-rc-QD5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hh-hm-hAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f4h-3k-Q6U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jL8-P7-kVT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VUw-wX-DYQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0re-3a-FFN" kind="relationship" relationship="rootViewController" id="CDp-XQ-W7n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCi-fe-oCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
         </scene>
