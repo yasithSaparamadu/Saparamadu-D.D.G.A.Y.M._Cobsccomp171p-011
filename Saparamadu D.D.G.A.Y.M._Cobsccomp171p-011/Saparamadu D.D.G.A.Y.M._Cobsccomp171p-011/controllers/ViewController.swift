@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //self.saveData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -31,6 +33,7 @@ class ViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         Auth.auth().removeStateDidChangeListener(ApptempData.userDataHaddle!)
     }
-  
+    
+   
 }
 
