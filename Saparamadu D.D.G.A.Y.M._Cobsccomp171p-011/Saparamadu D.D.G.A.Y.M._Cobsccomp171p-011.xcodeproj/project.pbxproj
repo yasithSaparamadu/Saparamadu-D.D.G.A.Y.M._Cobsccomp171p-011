@@ -24,6 +24,7 @@
 		EB7599D7228EB1D700FE965B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB7599D6228EB1D700FE965B /* GoogleService-Info.plist */; };
 		EB8E97D62290207300C90970 /* studentmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E97D52290207300C90970 /* studentmodel.swift */; };
 		EB8E97DA229063FE00C90970 /* AddStudentDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E97D9229063FE00C90970 /* AddStudentDataViewController.swift */; };
+		EB94D3442290FDF500C60E85 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94D3432290FDF500C60E85 /* ForgetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		EB7599D6228EB1D700FE965B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB8E97D52290207300C90970 /* studentmodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = studentmodel.swift; sourceTree = "<group>"; };
 		EB8E97D9229063FE00C90970 /* AddStudentDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentDataViewController.swift; sourceTree = "<group>"; };
+		EB94D3432290FDF500C60E85 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				EB4C5307228EF3AA004797B0 /* LoginViewController.swift */,
 				EB4C5309228EF3BB004797B0 /* HomeViewController.swift */,
 				EB8E97D9229063FE00C90970 /* AddStudentDataViewController.swift */,
+				EB94D3432290FDF500C60E85 /* ForgetPasswordViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				EB4C530C228EFAAA004797B0 /* ApptempData.swift in Sources */,
 				EB7599B7228EAD9D00FE965B /* ViewController.swift in Sources */,
 				EB1137AF228FBE9F00DBF2CB /* HomeTableViewCell.swift in Sources */,
+				EB94D3442290FDF500C60E85 /* ForgetPasswordViewController.swift in Sources */,
 				EB7599B5228EAD9D00FE965B /* AppDelegate.swift in Sources */,
 				EB4C530A228EF3BB004797B0 /* HomeViewController.swift in Sources */,
 				EB8E97DA229063FE00C90970 /* AddStudentDataViewController.swift in Sources */,
