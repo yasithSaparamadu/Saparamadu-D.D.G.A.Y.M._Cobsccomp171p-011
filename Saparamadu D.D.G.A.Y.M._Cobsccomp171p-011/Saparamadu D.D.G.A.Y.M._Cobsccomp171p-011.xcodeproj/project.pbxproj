@@ -10,6 +10,7 @@
 		80B13A43CE2F5E8B3AEDB4F8 /* Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35BA7856D7DE11CFD0E8415 /* Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011.framework */; };
 		DE67F5CED8FA2CE054D9925A /* Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA8FA0D92C0453F51D4B701 /* Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011UITests.framework */; };
 		EB1137AF228FBE9F00DBF2CB /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1137AE228FBE9F00DBF2CB /* HomeTableViewCell.swift */; };
+		EB40D47E2291947900BC982B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D47D2291947900BC982B /* SignUpViewController.swift */; };
 		EB4C5304228EEB73004797B0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C5303228EEB73004797B0 /* Home.storyboard */; };
 		EB4C5306228EEC73004797B0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C5305228EEC73004797B0 /* Login.storyboard */; };
 		EB4C5308228EF3AA004797B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4C5307228EF3AA004797B0 /* LoginViewController.swift */; };
@@ -45,6 +46,7 @@
 		A35BA7856D7DE11CFD0E8415 /* Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA8FA0D92C0453F51D4B701 /* Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1137AE228FBE9F00DBF2CB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		EB40D47D2291947900BC982B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EB4C5303228EEB73004797B0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EB4C5305228EEC73004797B0 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EB4C5307228EF3AA004797B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				EB4C5309228EF3BB004797B0 /* HomeViewController.swift */,
 				EB8E97D9229063FE00C90970 /* AddStudentDataViewController.swift */,
 				EB94D3432290FDF500C60E85 /* ForgetPasswordViewController.swift */,
+				EB40D47D2291947900BC982B /* SignUpViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				EB4C530C228EFAAA004797B0 /* ApptempData.swift in Sources */,
 				EB7599B7228EAD9D00FE965B /* ViewController.swift in Sources */,
 				EB1137AF228FBE9F00DBF2CB /* HomeTableViewCell.swift in Sources */,
+				EB40D47E2291947900BC982B /* SignUpViewController.swift in Sources */,
 				EB94D3442290FDF500C60E85 /* ForgetPasswordViewController.swift in Sources */,
 				EB7599B5228EAD9D00FE965B /* AppDelegate.swift in Sources */,
 				EB4C530A228EF3BB004797B0 /* HomeViewController.swift in Sources */,

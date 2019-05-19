@@ -163,7 +163,7 @@ extension AddStudentDataViewController: UIImagePickerControllerDelegate, UINavig
         imgPicker.dismiss(animated: true, completion: nil)
     }
     
-    //
+    //image upload delegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let imageUrl = info[UIImagePickerController.InfoKey.imageURL] as? URL{
