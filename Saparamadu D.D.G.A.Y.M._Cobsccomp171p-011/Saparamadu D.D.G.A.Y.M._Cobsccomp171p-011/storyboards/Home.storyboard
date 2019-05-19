@@ -200,7 +200,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
-                                            <action selector="saveStudent:" destination="ULV-aK-jrB" eventType="touchUpInside" id="EBe-p6-lAo"/>
+                                            <action selector="saveStudent" destination="ULV-aK-jrB" eventType="touchUpInside" id="qZC-nX-0jf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHv-BW-7Bx">
