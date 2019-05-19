@@ -56,24 +56,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //get student data from firebase database
     func loardStudentData(){
         
-       ///////////////////
-//        ref.child("StudentDetails").observeSingleEvent(of: .value, with: { (snapshot) in
-//            // Get user value
-//            let value = snapshot.value as? NSDictionary
-//            print("Studentr Data 2: \(value)")
-//
-//
-//
-//            // ...
-//        }) { (error) in
-//            print(error.localizedDescription)
-//        }
-        ///////////////////
-        
-        
-        
-        
-        
         self.ref.child("StudentDetails/Students").observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
 
@@ -94,10 +76,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                                             facebookProfile: stdObject!["facebookProfile"] as! String,
                                             city: stdObject!["city"] as! String,
                                             profileImageURL: stdObject!["profileImageURL"] as! String)
-
-
-//                    (firstName: stdObject!["firstName"] as! String, lastName: stdObject!["lastName"] as! String, phoneNo: stdObject!["phoneNo"] as! Int, facebookProfile: stdObject!["facebookProfile"] as! String, city: stdObject!["city"] as! String, profileImageURL: stdObject!["profileImageURL"] as! String)
-
 
 
                     nextstudent.append(dataModel)
