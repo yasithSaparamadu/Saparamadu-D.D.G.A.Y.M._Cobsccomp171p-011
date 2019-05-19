@@ -108,6 +108,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return stdDetailCell
   }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "studentView" {let selectedIndex = sender as! Int
+            let selectedStd = self.studentDetail[selectedIndex]
+           let studentDataviewController = segue.destination as! ViewStudentViewController
+            studentDataviewController.studentData = selectedStd
+
+            
+        }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "studentView", sender: indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
