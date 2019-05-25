@@ -19,41 +19,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="EOq-kn-5Ev">
-                                <rect key="frame" x="67" y="47" width="240" height="128"/>
+                                <rect key="frame" x="99" y="97" width="179" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="4tG-tN-4Ex"/>
-                                    <constraint firstAttribute="height" constant="128" id="J2N-nb-EJL"/>
+                                    <constraint firstAttribute="width" constant="179" id="TOa-S0-8Vt"/>
+                                    <constraint firstAttribute="height" constant="50" id="glL-q4-fW6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUh-8n-jue">
-                                <rect key="frame" x="111" y="229" width="152" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM CONNECT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGc-Lf-tZD">
+                                <rect key="frame" x="55" y="480" width="265" height="71"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="152" id="XDD-f8-lEK"/>
-                                    <constraint firstAttribute="height" constant="29" id="f1L-Fa-IPY"/>
+                                    <constraint firstAttribute="height" constant="71" id="2Gu-aR-6md"/>
+                                    <constraint firstAttribute="width" constant="265" id="gMM-sX-ETc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="29"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.010547870710000001" green="0.040966053299999999" blue="0.017608936969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="15" height="6"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoMakr_5Q4evQ" translatesAutoresizingMaskIntoConstraints="NO" id="wvo-RL-wpF">
+                                <rect key="frame" x="81" y="323" width="212" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="CwS-Qp-fbh"/>
+                                    <constraint firstAttribute="width" constant="212" id="fqn-Jb-Ovn"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="tUh-8n-jue" secondAttribute="trailing" constant="96" id="JxZ-we-fJR"/>
-                            <constraint firstItem="EOq-kn-5Ev" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="27" id="LVo-ZS-vz8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EOq-kn-5Ev" secondAttribute="trailing" constant="52" id="OAd-Tn-tpb"/>
-                            <constraint firstItem="tUh-8n-jue" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="209" id="saX-tw-wii"/>
-                            <constraint firstItem="EOq-kn-5Ev" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="51" id="wRi-KN-dYY"/>
-                            <constraint firstItem="tUh-8n-jue" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="95" id="y3c-xn-ObK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wvo-RL-wpF" secondAttribute="trailing" constant="66" id="9Yi-i5-P9c"/>
+                            <constraint firstItem="OGc-Lf-tZD" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="460" id="AGH-6M-9xc"/>
+                            <constraint firstItem="wvo-RL-wpF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="65" id="FMT-VJ-XSR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OGc-Lf-tZD" secondAttribute="trailing" constant="39" id="HtO-6a-sMQ"/>
+                            <constraint firstItem="EOq-kn-5Ev" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="83" id="RFh-4a-X9T"/>
+                            <constraint firstItem="EOq-kn-5Ev" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="77" id="UIK-ML-c13"/>
+                            <constraint firstItem="OGc-Lf-tZD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="39" id="UMh-ZB-Ezh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EOq-kn-5Ev" secondAttribute="trailing" constant="81" id="dI3-fO-0ur"/>
+                            <constraint firstItem="wvo-RL-wpF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="303" id="lHS-fs-bg2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
         <image name="Image" width="300" height="172"/>
+        <image name="LogoMakr_5Q4evQ" width="335" height="400"/>
     </resources>
 </document>

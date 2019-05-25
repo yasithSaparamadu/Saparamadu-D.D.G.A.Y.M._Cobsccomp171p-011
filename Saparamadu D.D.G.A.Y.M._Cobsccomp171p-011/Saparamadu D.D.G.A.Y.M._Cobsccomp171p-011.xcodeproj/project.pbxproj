@@ -14,6 +14,7 @@
 		EB40D4802291D55E00BC982B /* ViewStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D47F2291D55E00BC982B /* ViewStudentViewController.swift */; };
 		EB40D4822291E03A00BC982B /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D4812291E03A00BC982B /* UserProfile.swift */; };
 		EB40D4842291E17A00BC982B /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB40D4832291E17A00BC982B /* MyProfile.storyboard */; };
+		EB40D4862291EE8500BC982B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D4852291EE8500BC982B /* UserProfileViewController.swift */; };
 		EB4C5304228EEB73004797B0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C5303228EEB73004797B0 /* Home.storyboard */; };
 		EB4C5306228EEC73004797B0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C5305228EEC73004797B0 /* Login.storyboard */; };
 		EB4C5308228EF3AA004797B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4C5307228EF3AA004797B0 /* LoginViewController.swift */; };
@@ -53,6 +54,7 @@
 		EB40D47F2291D55E00BC982B /* ViewStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStudentViewController.swift; sourceTree = "<group>"; };
 		EB40D4812291E03A00BC982B /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EB40D4832291E17A00BC982B /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
+		EB40D4852291EE8500BC982B /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		EB4C5303228EEB73004797B0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EB4C5305228EEC73004797B0 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EB4C5307228EF3AA004797B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				EB94D3432290FDF500C60E85 /* ForgetPasswordViewController.swift */,
 				EB40D47D2291947900BC982B /* SignUpViewController.swift */,
 				EB40D47F2291D55E00BC982B /* ViewStudentViewController.swift */,
+				EB40D4852291EE8500BC982B /* UserProfileViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				EB40D4802291D55E00BC982B /* ViewStudentViewController.swift in Sources */,
 				EB94D3442290FDF500C60E85 /* ForgetPasswordViewController.swift in Sources */,
 				EB7599B5228EAD9D00FE965B /* AppDelegate.swift in Sources */,
+				EB40D4862291EE8500BC982B /* UserProfileViewController.swift in Sources */,
 				EB40D4822291E03A00BC982B /* UserProfile.swift in Sources */,
 				EB4C530A228EF3BB004797B0 /* HomeViewController.swift in Sources */,
 				EB8E97DA229063FE00C90970 /* AddStudentDataViewController.swift in Sources */,

@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--MyProfile-->
+        <scene sceneID="erI-bI-dSk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyProfile" id="MCV-FA-0nu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tR1-XL-cj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="-490"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="jo5-o9-3hr">
             <objects>
@@ -43,36 +51,37 @@
                                                                 <constraint firstAttribute="width" constant="86" id="dXG-Rt-3pc"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzD-qQ-EZv">
-                                                            <rect key="frame" x="140" y="41" width="220" height="33"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="33" id="Guu-61-VGV"/>
-                                                                <constraint firstAttribute="width" constant="220" id="UdK-UM-B2b"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qP-zP-Zrk">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qP-zP-Zrk">
                                                             <rect key="frame" x="122" y="7" width="244" height="34"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="244" id="28k-Jy-8Kd"/>
                                                                 <constraint firstAttribute="height" constant="34" id="WdI-CS-S9y"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                            <color key="textColor" red="0.43872083967492193" green="0.42464466632032971" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzD-qQ-EZv">
+                                                            <rect key="frame" x="122" y="47" width="220" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="220" id="4eo-IG-q5e"/>
+                                                                <constraint firstAttribute="height" constant="33" id="h5A-fB-mw6"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.54128317636986301" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="bzD-qQ-EZv" secondAttribute="bottom" constant="9" id="4Ts-Ai-9xm"/>
                                                         <constraint firstItem="2qP-zP-Zrk" firstAttribute="top" secondItem="bzj-GH-IEg" secondAttribute="top" constant="7" id="9fR-9p-dOO"/>
                                                         <constraint firstAttribute="bottom" secondItem="XHK-CM-QjA" secondAttribute="bottom" constant="7.5" id="Ben-o4-YKy"/>
-                                                        <constraint firstItem="bzD-qQ-EZv" firstAttribute="top" secondItem="2qP-zP-Zrk" secondAttribute="bottom" id="MaJ-Qs-AjO"/>
-                                                        <constraint firstItem="bzD-qQ-EZv" firstAttribute="leading" secondItem="XHK-CM-QjA" secondAttribute="trailing" constant="45" id="WK7-il-OKL"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="bzD-qQ-EZv" secondAttribute="trailing" constant="18" id="CQ1-sc-jmP"/>
+                                                        <constraint firstItem="bzD-qQ-EZv" firstAttribute="top" secondItem="bzj-GH-IEg" secondAttribute="topMargin" constant="36" id="DKz-Yb-aVK"/>
                                                         <constraint firstItem="2qP-zP-Zrk" firstAttribute="leading" secondItem="XHK-CM-QjA" secondAttribute="trailing" constant="27" id="ZUP-zd-DNM"/>
                                                         <constraint firstItem="XHK-CM-QjA" firstAttribute="leading" secondItem="bzj-GH-IEg" secondAttribute="leading" constant="9" id="m0L-f3-UQx"/>
                                                         <constraint firstItem="XHK-CM-QjA" firstAttribute="top" secondItem="bzj-GH-IEg" secondAttribute="top" constant="7" id="oXa-6y-b6J"/>
+                                                        <constraint firstItem="bzD-qQ-EZv" firstAttribute="leading" secondItem="bzj-GH-IEg" secondAttribute="leadingMargin" constant="107" id="y9C-3u-bgV"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -84,7 +93,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.89665641190000001" green="0.68302656747966184" blue="0.45778830761457578" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="UNJ-61-leL" secondAttribute="bottom" id="ERg-xD-kQb"/>
                                     <constraint firstAttribute="trailing" secondItem="UNJ-61-leL" secondAttribute="trailing" id="VPY-lo-vyx"/>
@@ -103,19 +112,23 @@
                         <viewLayoutGuide key="safeArea" id="Oj2-NU-WfJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="sGE-pR-JHF">
-                        <leftBarButtonItems>
-                            <barButtonItem title="Add" id="5OE-Jm-iLS">
-                                <connections>
-                                    <segue destination="ULV-aK-jrB" kind="show" id="d4y-mz-Abv"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="My Profile" id="bCs-zg-0Iz"/>
-                        </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="L2C-nh-3QZ">
+                        <barButtonItem key="leftBarButtonItem" springLoaded="YES" systemItem="add" id="5OE-Jm-iLS">
                             <connections>
-                                <action selector="logout:" destination="0re-3a-FFN" id="MgQ-rc-QD5"/>
+                                <segue destination="ULV-aK-jrB" kind="show" id="d4y-mz-Abv"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Log Out" id="L2C-nh-3QZ">
+                                <connections>
+                                    <action selector="logout:" destination="0re-3a-FFN" id="MgQ-rc-QD5"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="My Profile" style="plain" id="bCs-zg-0Iz">
+                                <connections>
+                                    <segue destination="MCV-FA-0nu" kind="show" id="She-U8-HB5"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="UNJ-61-leL" id="3tc-B0-uUA"/>
