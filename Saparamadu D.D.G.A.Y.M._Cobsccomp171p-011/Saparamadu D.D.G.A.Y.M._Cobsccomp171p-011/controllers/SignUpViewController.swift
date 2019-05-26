@@ -89,6 +89,8 @@ class SignUpViewController: UIViewController {
     
     @IBAction func cancel(_ sender: Any) {
         
+        self.dismiss(animated: true, completion: nil)
+        
     }
     
     
@@ -120,7 +122,10 @@ class SignUpViewController: UIViewController {
             }
         }
     }
-        
+    
+  
+    
+    
         //save function
         func addUser(){
             Auth.auth().createUser(withEmail: self.email.text!, password: self.password.text!) { authResult, error in
