@@ -16,7 +16,7 @@
                 <viewControllerPlaceholder storyboardName="MyProfile" id="MCV-FA-0nu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tR1-XL-cj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="-411"/>
+            <point key="canvasLocation" x="2229" y="1388"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="jo5-o9-3hr">
@@ -113,18 +113,18 @@
                         <viewLayoutGuide key="safeArea" id="Oj2-NU-WfJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="sGE-pR-JHF">
-                        <barButtonItem key="leftBarButtonItem" springLoaded="YES" systemItem="add" id="5OE-Jm-iLS"/>
+                        <barButtonItem key="leftBarButtonItem" springLoaded="YES" systemItem="add" id="5OE-Jm-iLS">
+                            <connections>
+                                <segue destination="ULV-aK-jrB" kind="show" id="rDL-DS-cqG"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem title="Log Out" id="L2C-nh-3QZ">
                                 <connections>
                                     <action selector="logout:" destination="0re-3a-FFN" id="MgQ-rc-QD5"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="My Profile" style="plain" id="bCs-zg-0Iz">
-                                <connections>
-                                    <segue destination="MCV-FA-0nu" kind="show" id="She-U8-HB5"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem title="My Profile" style="plain" id="bCs-zg-0Iz"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -139,13 +139,14 @@
         <!--Add Student Data View Controller-->
         <scene sceneID="p9o-KS-IcA">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXG-4q-R4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ULV-aK-jrB" customClass="AddStudentDataViewController" customModule="Saparamadu_D_D_G_A_Y_M__Cobsccomp171p_011" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="qOI-0H-rbx">
+                    <view key="view" contentMode="scaleToFill" id="qOI-0H-rbx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ngb-Zu-Oea">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngb-Zu-Oea">
+                                <rect key="frame" x="0.0" y="-49" width="375" height="667"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bw6-oz-SWM">
                                         <rect key="frame" x="35" y="251" width="304" height="30"/>
@@ -282,9 +283,8 @@
                         <outlet property="save" destination="ClC-Ax-bhy" id="IpQ-Y5-tk1"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UXG-4q-R4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2356" y="1519"/>
+            <point key="canvasLocation" x="2356" y="-694"/>
         </scene>
         <!--Homework View Controller-->
         <scene sceneID="NQs-El-H7s">
@@ -562,9 +562,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHs-Nu-kSK">
-                                <rect key="frame" x="99" y="221" width="164" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHs-Nu-kSK">
+                                <rect key="frame" x="105" y="225" width="164" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="9XO-Dd-3dW"/>
+                                    <constraint firstAttribute="height" constant="168" id="As3-sK-gub"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="mio-design-assets-1xXy1fl4TZ6fFfsrpLS18XC6dcWNa0jOh-as-fingerprinticon-anatomy-indisplayfingerprinticon4"/>
                                 <connections>
                                     <action selector="fingerprintAuth:" destination="W6R-rp-Ozj" eventType="touchUpInside" id="7li-HU-wFo"/>
@@ -572,11 +575,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rHs-Nu-kSK" firstAttribute="leading" secondItem="phI-mY-fR2" secondAttribute="leadingMargin" constant="89" id="3IL-Bx-st4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rHs-Nu-kSK" secondAttribute="trailing" constant="90" id="9Nq-7C-PAX"/>
+                            <constraint firstItem="rHs-Nu-kSK" firstAttribute="top" secondItem="phI-mY-fR2" secondAttribute="topMargin" constant="161" id="wNH-0p-hNd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tZf-Wx-1ZS"/>
                     </view>
                     <navigationItem key="navigationItem" id="rQx-Nr-5BR"/>
                     <connections>
-                        <segue destination="ULV-aK-jrB" kind="show" id="1a5-Pa-eOg"/>
+                        <segue destination="MCV-FA-0nu" kind="show" identifier="touchID" id="c2Y-HL-Eyt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZr-Bb-b4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -606,7 +614,7 @@
         <scene sceneID="HSL-Ec-KLF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Dl-iG-Key" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="t2j-Ha-cTL"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="Profile" id="t2j-Ha-cTL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YME-qr-sej">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -623,6 +631,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Profile" width="25" height="25"/>
         <image name="house" width="25" height="25"/>
         <image name="mio-design-assets-1xXy1fl4TZ6fFfsrpLS18XC6dcWNa0jOh-as-fingerprinticon-anatomy-indisplayfingerprinticon4" width="720" height="720"/>
         <image name="notepad" width="25" height="25"/>
