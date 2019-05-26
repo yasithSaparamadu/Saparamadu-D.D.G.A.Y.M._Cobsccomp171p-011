@@ -49,8 +49,11 @@ class AddStudentDataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        clear.layer.cornerRadius = self.clear.bounds.height / 2
+       // clear.layer.cornerRadius = self.clear.bounds.height / 2
         save.layer.cornerRadius = self.save.bounds.height / 2
+        
+        self.profileImage.layer.cornerRadius = self.profileImage.bounds.height / 2
+        profileImage.clipsToBounds = true
 
         
         //image picker set

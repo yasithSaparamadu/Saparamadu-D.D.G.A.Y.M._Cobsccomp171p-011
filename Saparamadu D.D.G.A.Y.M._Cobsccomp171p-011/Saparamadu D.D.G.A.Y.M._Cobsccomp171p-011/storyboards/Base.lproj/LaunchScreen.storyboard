@@ -36,25 +36,25 @@
                                 <color key="highlightedColor" red="0.010547870710000001" green="0.040966053299999999" blue="0.017608936969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="15" height="6"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoMakr_5Q4evQ" translatesAutoresizingMaskIntoConstraints="NO" id="wvo-RL-wpF">
-                                <rect key="frame" x="81" y="323" width="212" height="108"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoMakr_5Q4evQ" translatesAutoresizingMaskIntoConstraints="NO" id="wvo-RL-wpF" colorLabel="IBBuiltInLabel-Yellow">
+                                <rect key="frame" x="105" y="361" width="165" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="108" id="CwS-Qp-fbh"/>
-                                    <constraint firstAttribute="width" constant="212" id="fqn-Jb-Ovn"/>
+                                    <constraint firstAttribute="height" constant="50" id="CZq-L2-vdM"/>
+                                    <constraint firstAttribute="width" constant="165" id="FYK-Lr-Lkh"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="wvo-RL-wpF" secondAttribute="trailing" constant="66" id="9Yi-i5-P9c"/>
                             <constraint firstItem="OGc-Lf-tZD" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="460" id="AGH-6M-9xc"/>
-                            <constraint firstItem="wvo-RL-wpF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="65" id="FMT-VJ-XSR"/>
+                            <constraint firstItem="wvo-RL-wpF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="341" id="Df0-hR-H1h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OGc-Lf-tZD" secondAttribute="trailing" constant="39" id="HtO-6a-sMQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wvo-RL-wpF" secondAttribute="trailing" constant="89" id="IQV-ys-lma"/>
+                            <constraint firstItem="wvo-RL-wpF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="89" id="PkB-Zc-hls"/>
                             <constraint firstItem="EOq-kn-5Ev" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="83" id="RFh-4a-X9T"/>
                             <constraint firstItem="EOq-kn-5Ev" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="77" id="UIK-ML-c13"/>
                             <constraint firstItem="OGc-Lf-tZD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="39" id="UMh-ZB-Ezh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EOq-kn-5Ev" secondAttribute="trailing" constant="81" id="dI3-fO-0ur"/>
-                            <constraint firstItem="wvo-RL-wpF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="303" id="lHS-fs-bg2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

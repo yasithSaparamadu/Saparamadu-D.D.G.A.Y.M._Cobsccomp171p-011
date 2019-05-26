@@ -30,6 +30,8 @@ class UserProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.userImage.layer.cornerRadius = self.userImage.bounds.height / 2
+        userImage.clipsToBounds = true
         getUserProfile()
         
 
@@ -41,22 +43,29 @@ class UserProfileViewController: UIViewController {
         
         let userId = Auth.auth().currentUser?.uid
         
-        Database.database().reference().child("").child(userId!).observeSingleEvent(of: .value, with: {(DataSnapshot) in
+        Database.database().reference().child("user").child(userId!).observeSingleEvent(of: .value, with: {(DataSnapshot) in
         
+            
+            print(DataSnapshot)
             if let userProf = DataSnapshot.value as? [String : AnyObject]{
                 
-                let imgURL = URL(string: userProf[""] as! String)
+                let imgURL = URL(string: userProf["userImg"] as! String)
                 self.userImage.kf.setImage(with: imgURL)
-                self.userName.text! = userProf[""] as! String
-                self.age.text! = " : \(String(userProf[""] as! Int))"
-                self.birthday.text! = " : \(userProf[""] as! String)"
-                self.phoneNumber.text! = " : \(String(userProf[""] as! Int))"
+                self.userName.text! = userProf["userName"] as! String
+                self.age.text! = "Age : \(String(userProf["age"] as! Int))"
+                self.birthday.text! = "Birthday : \(userProf["birthdate"] as! String)"
+                self.phoneNumber.text! = "Phone Number : \(String(userProf["phoneNo"] as! Int))"
                 
             }
         }, withCancel: nil)
             
     }
 
+   
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

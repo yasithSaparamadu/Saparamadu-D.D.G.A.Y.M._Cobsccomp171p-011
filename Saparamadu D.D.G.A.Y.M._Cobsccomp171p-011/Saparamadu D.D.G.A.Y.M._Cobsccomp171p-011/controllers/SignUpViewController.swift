@@ -54,6 +54,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.imageView.layer.cornerRadius = self.imageView.bounds.height / 2
+        imageView.clipsToBounds = true
+        
         //image picker set
         imgPicker = UIImagePickerController()
         imgPicker.allowsEditing = true

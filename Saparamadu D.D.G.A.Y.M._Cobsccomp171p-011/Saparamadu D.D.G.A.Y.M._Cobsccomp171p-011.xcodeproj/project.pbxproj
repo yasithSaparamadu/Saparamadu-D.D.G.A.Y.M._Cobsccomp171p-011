@@ -15,6 +15,10 @@
 		EB40D4822291E03A00BC982B /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D4812291E03A00BC982B /* UserProfile.swift */; };
 		EB40D4842291E17A00BC982B /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB40D4832291E17A00BC982B /* MyProfile.storyboard */; };
 		EB40D4862291EE8500BC982B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D4852291EE8500BC982B /* UserProfileViewController.swift */; };
+		EB4B5F4F229A6E38007DF869 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B5F4E229A6E38007DF869 /* HomeworkViewController.swift */; };
+		EB4B5F51229A715C007DF869 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B5F50229A715C007DF869 /* AuthenticationViewController.swift */; };
+		EB4B5F53229A7280007DF869 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B5F52229A7280007DF869 /* AddNoteViewController.swift */; };
+		EB4B5F55229AC034007DF869 /* TouchIDAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B5F54229AC034007DF869 /* TouchIDAuthentication.swift */; };
 		EB4C5304228EEB73004797B0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C5303228EEB73004797B0 /* Home.storyboard */; };
 		EB4C5306228EEC73004797B0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C5305228EEC73004797B0 /* Login.storyboard */; };
 		EB4C5308228EF3AA004797B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4C5307228EF3AA004797B0 /* LoginViewController.swift */; };
@@ -55,6 +59,10 @@
 		EB40D4812291E03A00BC982B /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EB40D4832291E17A00BC982B /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
 		EB40D4852291EE8500BC982B /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		EB4B5F4E229A6E38007DF869 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
+		EB4B5F50229A715C007DF869 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		EB4B5F52229A7280007DF869 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		EB4B5F54229AC034007DF869 /* TouchIDAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDAuthentication.swift; sourceTree = "<group>"; };
 		EB4C5303228EEB73004797B0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EB4C5305228EEC73004797B0 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EB4C5307228EF3AA004797B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +152,9 @@
 				EB40D47D2291947900BC982B /* SignUpViewController.swift */,
 				EB40D47F2291D55E00BC982B /* ViewStudentViewController.swift */,
 				EB40D4852291EE8500BC982B /* UserProfileViewController.swift */,
+				EB4B5F4E229A6E38007DF869 /* HomeworkViewController.swift */,
+				EB4B5F50229A715C007DF869 /* AuthenticationViewController.swift */,
+				EB4B5F52229A7280007DF869 /* AddNoteViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -183,6 +194,7 @@
 		EB7599B3228EAD9D00FE965B /* Saparamadu D.D.G.A.Y.M._Cobsccomp171p-011 */ = {
 			isa = PBXGroup;
 			children = (
+				EB4B5F54229AC034007DF869 /* TouchIDAuthentication.swift */,
 				EB4C5302228EE8AC004797B0 /* storyboards */,
 				EB4C5301228EE863004797B0 /* controllers */,
 				EB4C5300228EE85A004797B0 /* views */,
@@ -429,12 +441,16 @@
 			files = (
 				EB4C5308228EF3AA004797B0 /* LoginViewController.swift in Sources */,
 				EB4C530C228EFAAA004797B0 /* ApptempData.swift in Sources */,
+				EB4B5F4F229A6E38007DF869 /* HomeworkViewController.swift in Sources */,
 				EB7599B7228EAD9D00FE965B /* ViewController.swift in Sources */,
+				EB4B5F53229A7280007DF869 /* AddNoteViewController.swift in Sources */,
 				EB1137AF228FBE9F00DBF2CB /* HomeTableViewCell.swift in Sources */,
 				EB40D47E2291947900BC982B /* SignUpViewController.swift in Sources */,
 				EB40D4802291D55E00BC982B /* ViewStudentViewController.swift in Sources */,
+				EB4B5F51229A715C007DF869 /* AuthenticationViewController.swift in Sources */,
 				EB94D3442290FDF500C60E85 /* ForgetPasswordViewController.swift in Sources */,
 				EB7599B5228EAD9D00FE965B /* AppDelegate.swift in Sources */,
+				EB4B5F55229AC034007DF869 /* TouchIDAuthentication.swift in Sources */,
 				EB40D4862291EE8500BC982B /* UserProfileViewController.swift in Sources */,
 				EB40D4822291E03A00BC982B /* UserProfile.swift in Sources */,
 				EB4C530A228EF3BB004797B0 /* HomeViewController.swift in Sources */,

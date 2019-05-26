@@ -23,6 +23,10 @@ class ViewStudentViewController: UIViewController {
     var studentData: Student!
     
     override func viewDidLoad() {
+        
+        self.userImage.layer.cornerRadius = self.userImage.bounds.height / 2
+        userImage.clipsToBounds = true
+        
         super.viewDidLoad()
         let imgURL = URL(string: studentData.profileImageURL)
         userImage.kf.setImage(with: imgURL)
